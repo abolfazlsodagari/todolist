@@ -3,10 +3,11 @@ import ReactDOM from "react-dom/client";
 
 import "./index.css";
 import { ThemeProvider, CssBaseline } from "@mui/material";
-import theme from "./mui/theme";
+import theme from "./theme/theme";
 import "./i18n";
 
 import App from "./App";
+import TodoListProvider from "./context/TodoList/provider";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -14,9 +15,11 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <App />
-    </ThemeProvider>
+    <TodoListProvider>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <App />
+      </ThemeProvider>
+    </TodoListProvider>
   </React.StrictMode>
 );

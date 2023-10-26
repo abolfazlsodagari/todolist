@@ -29,11 +29,6 @@ const TodoItemContent: FC<ITodoItemContentProps> = ({ item, setIsEdit }) => {
             : {}
         }
       >
-        <Typography
-          sx={{
-            color: (t) => t.palette.primary.dark,
-          }}
-        >{`${item.id}- `}</Typography>
         <Typography>{`${item.text}`}</Typography>
       </Stack>
 
