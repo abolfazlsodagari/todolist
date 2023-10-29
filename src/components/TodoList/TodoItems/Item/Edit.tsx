@@ -2,7 +2,7 @@ import { FC, useContext, useState } from "react";
 import { Stack, IconButton, TextField } from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
 import { ITodoItem } from ".";
-import { TodoListContext } from "../../../../../context";
+import { TodoListContext } from "../../../../common/contexts";
 
 interface IEditFormTodoItemProps {
   item: ITodoItem;

@@ -2,7 +2,7 @@ import { FC, useContext } from "react";
 import { Stack, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import TodoItem from "./Item";
-import { TodoListContext } from "../../../../context";
+import { TodoListContext } from "../../../common/contexts";
 
 interface ITodoItemsProps {}
 

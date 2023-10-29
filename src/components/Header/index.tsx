@@ -7,6 +7,7 @@ interface IHeaderProps {}
 const Header: FC<IHeaderProps> = () => {
   // Getting Translation Object
   const { t } = useTranslation();
+
   return (
     <Stack
       sx={{

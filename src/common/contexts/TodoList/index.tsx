@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { ITodoItem } from "../../components/shared/TodoList/TodoItems/Item";
+import { ITodoItem } from "../../../components/TodoList/TodoItems/Item";
 
 interface ITodoListContext {
   todoList: ITodoItem[];

@@ -1,17 +1,17 @@
 import { FC } from "react";
 import { Stack } from "@mui/material";
-import PageWrapper from "../../../containers/PageWrapper";
-import { TodoList } from "../../shared";
+import MainWrapper from "../../common/containers/MainWrapper";
+import { TodoList } from "../../components";
 
 interface IHomePage {}
 
 const HomePage: FC<IHomePage> = () => {
   return (
-    <PageWrapper>
+    <MainWrapper>
       <Stack alignItems="center" justifyContent={"center"}>
-          <TodoList />
+        <TodoList />
       </Stack>
-    </PageWrapper>
+    </MainWrapper>
   );
 };
 

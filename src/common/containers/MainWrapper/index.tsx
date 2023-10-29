@@ -1,12 +1,12 @@
 import { ReactNode, FC } from "react";
 import { Stack } from "@mui/material";
-import { Header } from "../../components/shared";
+import { Header } from "../../../components";
 
-interface IPageWrapperProps {
+interface IMainWrapperProps {
   children: ReactNode;
 }
 
-const PageWrapper: FC<IPageWrapperProps> = ({ children }) => {
+const MainWrapper: FC<IMainWrapperProps> = ({ children }) => {
   return (
     <Stack spacing={2}>
       {/* Main Header */}
@@ -17,4 +17,4 @@ const PageWrapper: FC<IPageWrapperProps> = ({ children }) => {
   );
 };
 
-export default PageWrapper;
+export default MainWrapper;

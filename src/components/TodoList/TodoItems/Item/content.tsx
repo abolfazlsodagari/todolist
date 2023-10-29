@@ -4,7 +4,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import ModeEditOutlineIcon from "@mui/icons-material/ModeEditOutline";
 import CheckIcon from "@mui/icons-material/Check";
 import { ITodoItem } from ".";
-import { TodoListContext } from "../../../../../context";
+import { TodoListContext } from "../../../../common/contexts";
 
 interface ITodoItemContentProps {
   item: ITodoItem;

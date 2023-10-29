@@ -1,5 +1,5 @@
 import { FC, useState } from "react";
-import { ITodoItem } from "../../components/shared/TodoList/TodoItems/Item";
+import { ITodoItem } from "../../../components/TodoList/TodoItems/Item";
 import TodoListContext from ".";
 
 interface ITodoListProvider {
